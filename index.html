@@ -1,26 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krupuk Indonesia — Croquez la tradition</title>
+  <meta name="description" content="Krupuk artisanal indonésien — croustillant, léger et plein de saveurs. Achetez en ligne !" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <!-- Simple SVG logo -->
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="#F59E0B"/>
+          <path d="M7 12c1.5-3 6-5 9-4" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span>Krupuk Indonesia</span>
+      </a>
+      <nav class="nav">
+        <a href="#produits">Produits</a>
+        <a href="#histoire">Notre histoire</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        Le krupuk, une spécialité indonésienne
-            Par bali-reve
-            Le 17/11/2015
-            Dans Cuisine
-            Le krupuk qu`on prononce kroupouk est quelque chose que vous trouverez dans tous les warungs (restaurants locaux ) car les Indonésiens en raffolent. Nous vous conseillons d`y gouter, sachez aussi que maintenant on les trouve également en France au cas ou le gout du krupuk vous manquerait lors de votre retour chez vous ...
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Croustillant. Authentique. Indonésien.</h1>
+          <p class="lead">Découvrez nos krupuk artisanaux — fabriqués selon des recettes familiales, parfaits pour l'apéritif, les accompagnements, ou comme snack.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#produits">Voir les produits</a>
+            <a class="btn-ghost" href="#histoire">Notre histoire</a>
+          </div>
+          <ul class="features">
+            <li>Recette familiale</li>
+            <li>Ingrédients naturels</li>
+            <li>Livraison internationale</li>
+          </ul>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Decorative SVG snack bowl -->
+          <svg viewBox="0 0 600 400" class="hero-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="bol de krupuk">
+            <rect width="100%" height="100%" rx="24" fill="#FFF7ED"/>
+            <g transform="translate(40,40)">
+              <ellipse cx="260" cy="220" rx="170" ry="38" fill="#FDE68A" opacity="0.9"/>
+              <ellipse cx="260" cy="160" rx="120" ry="90" fill="#F97316"/>
+              <g id="chips" transform="translate(160,60)" fill="#FFF2CC">
+                <ellipse cx="40" cy="40" rx="28" ry="18" transform="rotate(-18 40 40)"/>
+                <ellipse cx="120" cy="32" rx="34" ry="20" transform="rotate(12 120 32)"/>
+                <ellipse cx="80" cy="90" rx="30" ry="18" transform="rotate(-6 80 90)"/>
+                <ellipse cx="40" cy="120" rx="24" ry="14" transform="rotate(20 40 120)"/>
+                <ellipse cx="140" cy="110" rx="26" ry="16" transform="rotate(-10 140 110)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
 
-            On trouve le krupuk un peu partout en Asie, il s`agit en fait de chips. Les plus connues sont celles à base de crevette.
-            Les krupuk sont fabriqués en mixant des crevettes (par exemple), de la farine de tapioca et de l'eau pour en faire des boules qui sont ensuite cuites à la vapeur, puis débitées en des tranches qui sont mises à sécher au soleil. Une fois sèches, les tranches sont jetées dans de l'huile bouillante. En quelques secondes, les bulles d'air emprisonnées dans les tranches flexibles se dilatent et les petites chips semi-transparentes se changent alors en gros crackers blancs, un peu à la manière du popcorn.Ils peuvent être vendus déjà fris ou non mais les gens préfèrent bien sur les acheter déjà fris beaucoup plus pratique. On trouve également des krupuk au gout de fruit de mer / poisson / oignon / fruits / noix et même légumes, on en a aussi de toutes les tailles, petits, grands etc
+    <section id="produits" class="products container">
+      <h2>Nos best-sellers</h2>
+      <p class="sub">Croquez la variété — goût classique, épicé, crevette et plus.</p>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/product1.svg" alt="Krupuk goût crevette" />
+          </div>
+          <div class="card-body">
+            <h3>Krupuk Crevette</h3>
+            <p class="price">€6.50 / paquet</p>
+            <p>Saveur umami, croustillant irrésistible — parfait avec des sambals.</p>
+            <div class="card-actions">
+              <button class="btn-primary" data-product="Krupuk Crevette">Ajouter au panier</button>
+              <button class="btn-outline" onclick="openQuickView('Krupuk Crevette')">Aperçu</button>
+            </div>
+          </div>
+        </article>
 
-            Nous apprécions d`avoir de temps en temps quelques krupuk avec notre plat de riz notamment avec notre sambal ( sauce pimentée ) ou lors d`un petit creux. On vous conseille d`y gouter par exenple lorsque vous attendez au warung que le plat que vous avez commandé soit prêt. Pour nous c`est un peu l`équivalent de vos chips de pomme de terre.
+        <!-- Product 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/product2.svg" alt="Krupuk goût classique" />
+          </div>
+          <div class="card-body">
+            <h3>Krupuk Classique</h3>
+            <p class="price">€5.00 / paquet</p>
+            <p>Léger et aérien, l'accompagnement parfait pour n'importe quel repas.</p>
+            <div class="card-actions">
+              <button class="btn-primary" data-product="Krupuk Classique">Ajouter au panier</button>
+              <button class="btn-outline" onclick="openQuickView('Krupuk Classique')">Aperçu</button>
+            </div>
+          </div>
+        </article>
 
-        Parfois sur les routes vous pourrez même voir des vendeurs de krupuk avec leur vélo ou scooter chargé à ras bord !
+        <!-- Product 3 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/product3.svg" alt="Krupuk goût épicé" />
+          </div>
+          <div class="card-body">
+            <h3>Krupuk Épicé</h3>
+            <p class="price">€6.00 / paquet</p>
+            <p>Pimenté juste ce qu'il faut pour les amateurs de sensations.</p>
+            <div class="card-actions">
+              <button class="btn-primary" data-product="Krupuk Épicé">Ajouter au panier</button>
+              <button class="btn-outline" onclick="openQuickView('Krupuk Épicé')">Aperçu</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    </p>
+    <section id="histoire" class="story container">
+      <div class="story-grid">
+        <div>
+          <h2>Notre histoire</h2>
+          <p>Nous sommes une petite entreprise familiale d'Indonésie, fière de partager une tradition culinaire qui traverse les générations.</p>
+          <ul>
+            <li>Fabriqué artisanalement</li>
+            <li>Ingrédients locaux de qualité</li>
+            <li>Emballages recyclables</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Abonnez-vous</h3>
+          <p>Recevez 10% de réduction sur votre première commande.</p>
+          <form id="newsletter" class="newsletter">
+            <input type="email" id="email" placeholder="Votre e-mail" required>
+            <button class="btn-primary" type="submit">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact & commandes</h2>
+      <p>Envoyez-nous un message pour commandes en gros ou questions sur les livraisons.</p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Votre nom" required>
+        <input type="email" id="emailContact" placeholder="Votre e-mail" required>
+        <textarea id="message" rows="4" placeholder="Votre message..." required></textarea>
+        <button class="btn-primary" type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Krupuk Indonesia — Tous droits réservés.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick view modal -->
+  <div id="quickView" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" onclick="closeQuickView()">✕</button>
+      <div id="quickContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
